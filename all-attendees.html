@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Attendees - OETC Events</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/londinium-theme.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/icons.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/charts/sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/uniform.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/select2.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/inputmask.js"></script>
+<script type="text/javascript" src="js/plugins/forms/autosize.js"></script>
+<script type="text/javascript" src="js/plugins/forms/inputlimit.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/listbox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/multiselect.js"></script>
+<script type="text/javascript" src="js/plugins/forms/validate.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/tags.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/switch.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/uploader/plupload.full.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/uploader/plupload.queue.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/wysihtml5/wysihtml5.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/wysihtml5/toolbar.js"></script>
+
+<script type="text/javascript" src="js/plugins/interface/daterangepicker.js"></script>
+<script type="text/javascript" src="js/plugins/interface/fancybox.min.js"></script>
+<script type="text/javascript" src="js/plugins/interface/moment.js"></script>
+<script type="text/javascript" src="js/plugins/interface/jgrowl.min.js"></script>
+<script type="text/javascript" src="js/plugins/interface/datatables.min.js"></script>
+<script type="text/javascript" src="js/plugins/interface/colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/interface/fullcalendar.min.js"></script>
+<script type="text/javascript" src="js/plugins/interface/timepicker.min.js"></script>
+<script type="text/javascript" src="js/plugins/interface/collapsible.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+
+</head>
+
+<body class="sidebar-wide">
+
+	<!-- Navbar -->
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#"><img src="images/logo.png" height='30' width='30' alt="Londinium">OETC Events</a>
+			
+			
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-icons">
+				<span class="sr-only">Toggle right icons</span>
+				<i class="icon-paragraph-justify2"></i>
+			</button>
+
+			
+
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar">
+				<span class="sr-only">Toggle sidebar</span>
+				<i class="icon-indent-decrease"></i>
+			</button>
+		</div>
+
+		
+
+		<ul class="nav navbar-nav navbar-right collapse" id="navbar-icons">
+		<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-paragraph-justify2"></i> <span>Events</span> <b class="caret"></b></a>
+				<ul class="dropdown-menu dropdown-menu-right">
+					<li><a href="#">iPDX14</a></li>
+					<li><a href="#">Accelerate14</a></li>
+					<li><a href="#">Spark14</a></li>
+					<li><a href="#">iSF13</a></li>
+					<li><a href="#">iPDX13</a></li>
+					 <li class="divider"></li>
+					<li><a href="events-admin.html">View All Events</a></li>
+				</ul>
+			</li>
+			<li class="user dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown">
+					<img src="http://placehold.it/300">
+					<span>Thomas Richards</span>
+					<i class="caret"></i>
+				</a>
+				<ul class="dropdown-menu dropdown-menu-right icons-right">
+					<li><a href="#"><i class="icon-user"></i> Profile</a></li>
+					<li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+					<li><a href="#"><i class="icon-exit"></i> Logout</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="icon-wrench2"></i> Admin</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- /navbar -->
+
+
+
+	<!-- Page container -->
+ 	<div class="page-container">
+
+
+		<!-- Sidebar -->
+		<div class="sidebar collapse">
+			<div class="sidebar-content">
+
+				
+
+
+				<!-- Main navigation -->
+				<ul class="navigation">
+					<li><a href="index.html"><span>Dashboard</span> <i class="icon-screen2"></i></a></li>
+					<li>
+						<a href="all-settings.html" class=""><span>Event App Settings</span> <i class="icon-settings"></i></a>
+						
+					</li>
+					
+					
+					<!--
+<li>
+						<a href="all-presenters.html" class=""><span>All Presenters</span> <i class="icon-user"></i></a>
+						
+					</li>
+-->
+					<li>
+						<a href="all-locations.html" class=""><span>Locations</span> <i class="icon-location"></i></a>
+						
+					</li>
+					
+					<li class="active">
+						<a href="all-attendees.html" class=""><span>All Attendees</span> <i class="icon-users"></i></a>
+						
+					</li>
+					
+					
+					<li>
+						<a href="all-sponsors.html" class=""><span>All Sponsors</span> <i class="icon-tag5"></i></a>
+						
+					</li>
+					<li>
+						<a href="all-emails.html" class=""><span>Emails</span> <i class="icon-mail2"></i></a>
+						
+					</li>
+				</ul>
+				<!-- /main navigation -->
+				
+			</div>
+		</div>
+		<!-- /sidebar -->
+
+
+		<!-- Page content -->
+	 	<div class="page-content">
+
+		 	<div class="page-header">
+				<div class="page-title">
+					<h3>Attendees <small>Attendees for All OETC Events</small></h3>
+				</div>
+				<div class="range">
+				<button class="btn btn-primary btn-lg" type="button"><i class="icon-plus"></i> Add New Attendee</button>
+				</div>
+			</div>
+			
+
+
+			<!-- Breadcrumbs line -->
+			<div class="breadcrumb-line">
+				<ul class="breadcrumb">
+					<li><a href="index.html">Events</a></li>
+					<li class="active">All Attendees</li>
+				</ul>
+
+				<div class="visible-xs breadcrumb-toggle">
+					<a class="btn btn-link btn-lg btn-icon" data-toggle="collapse" data-target=".breadcrumb-buttons"><i class="icon-menu2"></i></a>
+				</div>
+			</div>
+			<!-- /breadcrumbs line -->
+			
+
+			               
+			                <div class="datatable">
+				                <table class="table table-striped">
+				                    <thead>
+				                        <tr>
+				                            <th>Name</th>
+				                            <th>Start Time</th>
+				                            <th>End Time</th>
+				                            <th>Start Date</th>
+				                            <th>End Date</th>
+				                            <th>Action</th>
+				                        </tr>
+				                    </thead>
+				                    <tbody>
+				                        <tr>
+				                            <td><a href="#">Registration</a></td>
+				                            <td>8:00 a.m.</td>
+				                            <td>2:00 p.m.</td>
+				                            <td>3/3/14</td>
+				                            <td>3/3/14</td>
+				                            <td><div class="btn-group">
+			                            <button class="btn btn-defualt dropdown-toggle" data-toggle="dropdown">
+				                            <i class="icon-wrench"></i> 
+				                            <span class="caret"></span>
+			                            </button>
+										<ul class="dropdown-menu icons-right">
+											<li><a href="#"><i class="icon-quill"></i> Edit</a></li>
+											<li><a href="#"><i class="icon-cancel-circle2"></i> Delete</a></li>
+											<li><a href="#"><i class="icon-eye2"></i> View</a></li>
+											
+										</ul></td>
+				                        </tr>
+				                        <tr>
+				                            <td><a href="#">Active Learning Session</a></td>
+				                            <td>8:00 a.m.</td>
+				                            <td>2:00 p.m.</td>
+				                            <td>3/3/14</td>
+				                            <td>3/3/14</td>
+				                            <td><div class="btn-group">
+			                            <button class="btn btn-defualt dropdown-toggle" data-toggle="dropdown">
+				                            <i class="icon-wrench"></i> 
+				                            <span class="caret"></span>
+			                            </button>
+										<ul class="dropdown-menu icons-right">
+											<li><a href="#"><i class="icon-quill"></i> Edit</a></li>
+											<li><a href="#"><i class="icon-cancel-circle2"></i> Delete</a></li>
+											<li><a href="#"><i class="icon-eye2"></i> View</a></li>
+										</ul></td>
+				                        </tr>
+				                        <tr>
+				                            <td><a href="#">Power Session</a></td>
+				                            <td>8:00 a.m.</td>
+				                            <td>2:00 p.m.</td>
+				                            <td>3/3/14</td>
+				                            <td>3/3/14</td>
+				                            <td><div class="btn-group">
+			                            <button class="btn btn-defualt dropdown-toggle" data-toggle="dropdown">
+				                            <i class="icon-wrench"></i> 
+				                            <span class="caret"></span>
+			                            </button>
+										<ul class="dropdown-menu icons-right">
+											<li><a href="#"><i class="icon-quill"></i> Edit</a></li>
+											<li><a href="#"><i class="icon-cancel-circle2"></i> Delete</a></li>
+											<li><a href="#"><i class="icon-eye2"></i> View</a></li>
+										</ul></td>
+				                        </tr>
+				                        <tr>
+				                            <td><a href="#">Keynote</a></td>
+				                            <td>8:00 a.m.</td>
+				                            <td>2:00 p.m.</td>
+				                            <td>3/3/14</td>
+				                            <td>3/3/14</td>
+				                            <td><div class="btn-group">
+			                            <button class="btn btn-defualt dropdown-toggle" data-toggle="dropdown">
+				                            <i class="icon-wrench"></i> 
+				                            <span class="caret"></span>
+			                            </button>
+										<ul class="dropdown-menu icons-right">
+											<li><a href="#"><i class="icon-quill"></i> Edit</a></li>
+											<li><a href="#"><i class="icon-cancel-circle2"></i> Delete</a></li>
+											<li><a href="#"><i class="icon-eye2"></i> View</a></li>
+										</ul></td>
+				                        </tr>
+				                        <tr>
+				                            <td><a href="#">Labs</a></td>
+				                            <td>8:00 a.m.</td>
+				                            <td>2:00 p.m.</td>
+				                            <td>3/3/14</td>
+				                            <td>3/3/14</td>
+				                            <td><div class="btn-group">
+			                            <button class="btn btn-defualt dropdown-toggle" data-toggle="dropdown">
+				                            <i class="icon-wrench"></i> 
+				                            <span class="caret"></span>
+			                            </button>
+										<ul class="dropdown-menu icons-right">
+											<li><a href="#"><i class="icon-quill"></i> Edit</a></li>
+											<li><a href="#"><i class="icon-cancel-circle2"></i> Delete</a></li>
+											<li><a href="#"><i class="icon-eye2"></i> View</a></li>
+										</ul></td>
+				                        </tr>
+				                        <tr>
+				                            <td><a href="#">Wrokshop</a></td>
+				                            <td>8:00 a.m.</td>
+				                            <td>2:00 p.m.</td>
+				                            <td>3/3/14</td>
+				                            <td>3/3/14</td>
+				                            <td><div class="btn-group">
+			                            <button class="btn btn-defualt dropdown-toggle" data-toggle="dropdown">
+				                            <i class="icon-wrench"></i> 
+				                            <span class="caret"></span>
+			                            </button>
+										<ul class="dropdown-menu icons-right">
+											<li><a href="#"><i class="icon-quill"></i> Edit</a></li>
+											<li><a href="#"><i class="icon-cancel-circle2"></i> Delete</a></li>
+											<li><a href="#"><i class="icon-eye2"></i> View</a></li>
+										</ul></td>
+				                        </tr>
+				                    </tbody>
+				                </table>
+			                </div>
+
+				        <!-- /striped datatable inside panel -->					
+
+	        <!-- Footer -->
+	        <div class="footer clearfix">
+		        <div class="pull-left">&copy; 2014.</div>
+	        	<div class="pull-right icons-group">
+	        		<a href="#"><i class="icon-screen2"></i></a>
+	        		<a href="#"><i class="icon-balance"></i></a>
+	        		<a href="#"><i class="icon-cog3"></i></a>
+	        	</div>
+	        </div>
+	        <!-- /footer -->
+
+
+		</div>
+		<!-- /page content -->
+
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>
